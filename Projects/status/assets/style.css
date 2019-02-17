@@ -13,9 +13,9 @@ header {
 }
 
 #clock-hours,
-#clock-minutes,
-#clock-seconds {
+#clock-minutes {
   display: inline-block;
+  text-align: center;
   width: 2.25rem;
 }
 
