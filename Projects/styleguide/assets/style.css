@@ -3,13 +3,14 @@ body {
   background: #222;
   margin: 0;
   font-size: 20px;
+  line-height: 1.5;
 }
 
 main {
   padding: 1rem 2rem;
   background: #eee;
   color: #222;
-  width: 80rem;
+  width: 85rem;
   margin: 0 auto;
 }
 
@@ -27,25 +28,29 @@ h3 {
   font-weight: 500;
 }
 
-.color {
+.swatch::before {
+  content: " ";
   display: inline-block;
-  height: 4rem;
-  width: 4rem;
+  height: 5.5rem;
+  width: 5.5rem;
+  margin-right: 1rem;
+  float: left;
 }
 
-.color-onyx-darken-1 {
+.swatch-onyx-darken-1::before {
   background: #151515;
 }
 
-.color-onyx {
+.swatch-onyx::before {
   background: #222;
 }
 
-.color-serenity {
+.swatch-serenity::before {
   background: #eee;
+  border: 1px inset #222;
 }
 
-.color-serenity-darken-1 {
+.swatch-serenity-darken-1::before {
   background: #ccc;
 }
 
